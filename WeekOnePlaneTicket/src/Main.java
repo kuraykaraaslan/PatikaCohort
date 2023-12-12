@@ -36,7 +36,7 @@ public class Main {
         }
 
         // Output the total price
-        System.out.println("Total: " + total);
+        System.out.println("Total: " + total + " TL");
 
         // Close the scanner to release resources
         scanner.close();
