@@ -13,7 +13,7 @@ public class Main {
         double decimalNumber = scanner.nextDouble();
 
         // Convert the integer to a decimal number and print the result
-        double integerToDouble = integerNumber;
+        double integerToDouble = (double) integerNumber;
         System.out.println("Converted integer to decimal: " + integerToDouble);
 
         // Convert the decimal number to an integer and print the result
