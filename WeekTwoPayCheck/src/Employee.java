@@ -49,7 +49,7 @@ public class Employee {
 
 
     // Method to print employee information
-    public void print() {
+    public String toString() {
         double totalSalary = salary - tax() + bonus() + raiseSalary();
         String result =  "Name: " + name + "\n" +
                 "Salary: " + salary + "\n" +
@@ -61,7 +61,7 @@ public class Employee {
                 "Salary with Tax and Bonus: " + (totalSalary - salary + tax() - bonus()) + "\n" +
                 "Total Salary: " + totalSalary;
 
-        System.out.println(result);
+        return result;
     }
 
 
