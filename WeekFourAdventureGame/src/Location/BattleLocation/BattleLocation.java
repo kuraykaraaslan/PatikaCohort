@@ -1,6 +1,5 @@
 package Location.BattleLocation;
 
-
 import Entity.Entity;
 import Entity.Player.Player;
 import Location.Location;
@@ -8,77 +7,77 @@ import Location.Location;
 import java.util.Random;
 
 public abstract class BattleLocation extends Location {
-    private final int monsterMaxHealth;
-    private final Random random = new Random();
-    private final Player player;
-    private final Entity monster;
-    private int totalMoney;
+    private final int monsterMaxHealth; // The maximum health of the monster in the battle
+    private final Random random = new Random(); // Random object to generate random numbers
+    private final Player player; // The player object participating in the battle
+    private final Entity monster; // The monster participating in the battle
+    private int totalMoney; // Total money accumulated during the battle
 
     BattleLocation(Player player, Entity monster) {
-        this.player = player;
-        this.monster = monster;
-        this.monsterMaxHealth = monster.getHealth();
-        this.totalMoney = 0;
+        this.player = player; // Assign the provided player object to the local player variable
+        this.monster = monster; // Assign the provided monster object to the local monster variable
+        this.monsterMaxHealth = monster.getHealth(); // Set the maximum health of the monster
+        this.totalMoney = 0; // Initialize the total money to 0
     }
 
     @Override
     public void enter() {
-        if (!itemControl()) {
-            fight(player, monster);
-            if (player.getCharacter().getHealth() > 0) {
-                if (!(monster.getName().equals("Snake"))) {
-                    System.out.println("\nYou Got " + totalMoney + " Money From Monsters!");
+        if (!itemControl()) { // Check if the player has already entered this location before
+            fight(player, monster); // Initiate the battle between the player and the monster
+            if (player.getCharacter().getHealth() > 0) { // If the player's health is greater than 0 after the battle
+                if (!(monster.getName().equals("Snake"))) { // If the monster is not a snake
+                    System.out.println("\nYou Got " + totalMoney + " Money From Monsters!"); // Print the total money earned from the battle
                 }
-                getReward();
+                getReward(); // Give the reward to the player
             }
-            monster.setHealth(monsterMaxHealth);
+            monster.setHealth(monsterMaxHealth); // Reset the monster's health to its maximum value
         } else {
-            System.out.println("\nYOU HAD ENTER HERE BEFORE!");
+            System.out.println("\nYOU HAD ENTER HERE BEFORE!"); // Print a message if the player has already entered this location
         }
     }
 
     public void fight(Player player, Entity monster) {
-        int monsterNum = this.random.nextInt(2, 4);
+        int monsterNum = this.random.nextInt(2, 4); // Generate a random number of monsters between 2 and 4
         boolean playerHitFirst;
-        System.out.println("\nThere are " + monsterNum + " " + monster.getName() + "s Inside!!");
-        for (int i = 1; i <= monsterNum; i++) {
-            monster.setHealth(monsterMaxHealth);
-            System.out.println("\n---------------" + i + ". " + monster.getName() + "----------------");
-            System.out.println(player.getNickName() + ": " + player.getCharacter().getHealth() + " <> " + monster.getName() + ": " + monster.getHealth());
-            playerHitFirst = this.random.nextBoolean();
+        System.out.println("\nThere are " + monsterNum + " " + monster.getName() + "s Inside!!"); // Print the number and name of the monsters
+        for (int i = 1; i <= monsterNum; i++) { // Iterate for each monster
+            monster.setHealth(monsterMaxHealth); // Reset the monster's health to its maximum value
+            System.out.println("\n---------------" + i + ". " + monster.getName() + "----------------"); // Print the label for the current monster
+            System.out.println(player.getNickName() + ": " + player.getCharacter().getHealth() + " <> " + monster.getName() + ": " + monster.getHealth()); // Print the current health of the player and the monster
+            playerHitFirst = this.random.nextBoolean(); // Determine randomly if the player will hit first
 
-            if (playerHitFirst) {
-                player.getCharacter().hit(monster);
-                printHealth(player, monster, true);
-                if (monster.getHealth() == 0) {
+            if (playerHitFirst) { // If the player hits first
+                player.getCharacter().hit(monster); // Player's character attacks the monster
+                printHealth(player, monster, true); // Print the health status after the player's attack
+                if (monster.getHealth() == 0) { // If the monster's health becomes 0
                     System.out.println("----------------------------------------");
-                    totalMoney += monster.getMoney();
-                    continue;
+                    totalMoney += monster.getMoney(); // Add the monster's money to the total money earned
+                    continue; // Move to the next iteration of the loop
                 }
             }
 
-            while (true) {
-                monster.hit(player.getCharacter());
-                printHealth(player, monster, false);
-                if (player.getCharacter().getHealth() == 0) break;
+            while (true) { // Infinite loop until someone's health becomes 0
+                monster.hit(player.getCharacter()); // Monster attacks the player's character
+                printHealth(player, monster, false); // Print the health status after the monster's attack
+                if (player.getCharacter().getHealth() == 0) break; // If the player's health becomes 0, break out of the loop
 
-                player.getCharacter().hit(monster);
-                printHealth(player, monster, true);
-                if (monster.getHealth() == 0) break;
+                player.getCharacter().hit(monster); // Player's character attacks the monster
+                printHealth(player, monster, true); // Print the health status after the player's attack
+                if (monster.getHealth() == 0) break; // If the monster's health becomes 0, break out of the loop
             }
             System.out.println("----------------------------------------");
-            if (player.getCharacter().getHealth() == 0) break;
-            totalMoney += monster.getMoney();
+            if (player.getCharacter().getHealth() == 0) break; // If the player's health becomes 0, break out of the loop
+            totalMoney += monster.getMoney(); // Add the monster's money to the total money earned
         }
-        player.getCharacter().setMoney(player.getCharacter().getMoney() + totalMoney);
-
+        player.getCharacter().setMoney(player.getCharacter().getMoney() + totalMoney); // Add the total money earned to the player's money balance
     }
 
     public Player getPlayer() {
-        return player;
+        return player; // Return the player object
     }
 
-    abstract boolean itemControl();
+    abstract boolean itemControl(); // Abstract method to check if the player has 
+
 
     abstract void getReward();
 

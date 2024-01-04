@@ -1,14 +1,16 @@
+// This code belongs to the package "Location.BattleLocation"
 package Location.BattleLocation;
 
+// Importing necessary classes and packages
 import Entity.Player.Player;
 import Entity.Monster.Snake;
-
 import java.util.Random;
-
 import Tool.Armor.*;
 import Tool.Weapon.*;
 
+// Define a class called "Mine" which extends the "BattleLocation" class
 public class Mine extends BattleLocation {
+    // Define private final variables for armor and weapon types
     private final LightArmor lightarmor;
     private final MediumArmor mediumArmor;
     private final HeavyArmor heavyArmor;
@@ -17,12 +19,15 @@ public class Mine extends BattleLocation {
     private final Sword sword;
     private final Rifle rifle;
 
-
+    // Create an instance of the Random class
     private final Random random = new Random();
 
+    // Constructor for the Mine class which takes a Player object as a parameter
     public Mine(Player player) {
+        // Call the constructor of the superclass (BattleLocation) with the Player object and a new Snake object
         super(player, new Snake());
 
+        // Initialize the armor and weapon objects
         this.lightarmor = new LightArmor();
         this.mediumArmor = new MediumArmor();
         this.heavyArmor = new HeavyArmor();
@@ -32,14 +37,19 @@ public class Mine extends BattleLocation {
         this.rifle = new Rifle();
     }
 
+    // Override the itemControl method from the superclass
     @Override
     boolean itemControl() {
         return false;
     }
 
+    // Override the getReward method from the superclass
     @Override
     void getReward() {
+        // Generate a random number between 1 and 101
         double randomNumber = random.nextDouble(1, 101);
+        
+        // Check the random number to determine the reward
         if (randomNumber <= 15) {
             if (randomNumber <= 3) {
                 getPlayer().getCharacter().setWeapon(rifle);
@@ -78,6 +88,7 @@ public class Mine extends BattleLocation {
         }
     }
 
+    // A private helper method to print the trophy found in the cave
     private void printTrophy(String trophy) {
         System.out.println(trophy + " Found in Cave");
     }
