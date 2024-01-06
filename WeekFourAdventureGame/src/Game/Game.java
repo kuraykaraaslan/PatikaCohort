@@ -29,7 +29,7 @@ public class Game {
     }
 
     public void buildPlayer() {
-        System.out.print("Name: ");
+        System.out.print("Enter a nickname: "); // Print message to the console
         String nickName = scanner.nextLine(); // Read user input for the player's name
         player = new Player(nickName); // Create a new Player object and assign it to the player variable
     }
@@ -37,10 +37,10 @@ public class Game {
     public void mainMenu() {
         while (true) {
             if (player.getCharacter().getHealth() == 0) {
-                System.out.println("\nYOU DIED! GAME OVER"); // Print game over message if the player's health is 0
+                System.out.println("\nYou Died!"); // Print message if player's health is 0
                 break;
             } else if (player.hasFireWood && player.hasFood && player.hasWater) {
-                System.out.println("\nYOU HAVE COLLECTED ALL ITEMS! THE GAME IS FINISHED"); // Print message if player has collected all items
+                System.out.println("\nYou Won! Congratulations!"); // Print message if player has all the items
                 break;
             }
             StringBuilder menu = new StringBuilder(); // Create a StringBuilder object for the menu
@@ -53,7 +53,7 @@ public class Game {
             menu.append("6-Safe House    Rest to Restore Your Health\n");
             menu.append("7-Inventory     Look Inventory\n");
             menu.append("-----------------------------------------------------------------\n");
-            menu.append("SELECT: ");
+            menu.append("Make a selection: ");
 
             System.out.print(menu.toString()); // Print the main menu options
             String selectNum = (scanner.next()).toLowerCase(); // Read user input for the selected option and convert to lowercase
@@ -65,7 +65,7 @@ public class Game {
                 case "5" -> workshop.enter(); // Call the enter method of the Workshop location
                 case "6" -> safeHouse.enter(); // Call the enter method of the SafeHouse location
                 case "7" -> inventory(); // Call the inventory method
-                default -> System.out.println("INVALID ENTRY!"); // Print message for invalid input
+                default -> System.out.println("Invalid selection. Please try again."); // Display an error message
             }
         }
     }

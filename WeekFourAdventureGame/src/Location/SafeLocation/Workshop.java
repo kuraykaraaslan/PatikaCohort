@@ -104,7 +104,7 @@ public class Workshop extends Location {
                 case "q":
                     break select; // Exit the weapon menu loop
                 default:
-                    System.out.println("INVALID NUMBER!"); // Invalid input
+                    System.out.println("Please Enter Valid Number!"); // Invalid input
                     break;
             }
         }

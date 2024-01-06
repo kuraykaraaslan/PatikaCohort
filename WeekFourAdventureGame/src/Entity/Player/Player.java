@@ -38,12 +38,12 @@ public class Player {
         while (true) {
             // Display the character menu and prompt the player for selection.
             StringBuilder menu = new StringBuilder();
-            menu.append("\n---------------Character Menu---------------\n");
+            menu.append("\n---------------Characters-----------------\n");
             menu.append("1-Samurai (Damage: 5, Health: 21, Money: 15)\n");
             menu.append("2-Archer  (Damage: 7, Health: 18, Money: 20)\n");
             menu.append("3-Knight  (Damage: 8, Health: 24, Money: 5 )\n");
             menu.append("--------------------------------------------\n");
-            menu.append("SELECT: ");
+            menu.append("Select a character: ");
 
             System.out.print(menu.toString());
             int selection = scanner.nextInt();  // Read the player's selection from the console.
@@ -60,7 +60,7 @@ public class Player {
                     this.character = new Knight();
                     break selectCharacter;  // Exit the loop after selecting a character.
                 default:
-                    System.out.println("INVALID NUMBER");  // Print an error message for an invalid selection.
+                    System.out.println("Invalid selection. Please try again."); // Display an error message.
                     break;
             }
         }
