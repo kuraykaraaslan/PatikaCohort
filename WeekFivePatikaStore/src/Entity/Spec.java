@@ -47,5 +47,31 @@ public class Spec {
         return this.regexRule;
     }
 
+    public void setIsRequired(boolean isRequired) {
+        this.isRequired = isRequired;
+    }
+
+    public void setRegexRule(String regexRule) {
+        this.regexRule = regexRule;
+    }
+
+    public void cleanFromAllProducts() {
+        for (Category category : Category.getCategories()) {
+            for (Product product : category.getProducts().values()) {
+                product.removeSpecValue(this);
+            }
+        }
+    }
+
+    //setName
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    //setType
+    public void setType(Class<?> type) {
+        this.type = type;
+    }
+
 }
 

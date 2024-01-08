@@ -14,48 +14,6 @@ public class Test {
         Category phones = new Category("Phones");
         Category laptops = new Category("Laptops");
 
-        // Create sub-categories Samsung, Lenovo, Apple, Huawei, Casper, Asus, HP, Xiaomi for Phones
-        Category samsungPhones = new Category("Samsung");
-        Category lenovoPhones = new Category("Lenovo");
-        Category applePhones = new Category("Apple");
-        Category huaweiPhones = new Category("Huawei");
-        Category casperPhones = new Category("Casper");
-        Category asusPhones = new Category("Asus");
-        Category hpPhones = new Category("HP");
-        Category xiaomiPhones = new Category("Xiaomi");
-
-        // Create sub-categories Samsung, Lenovo, Apple, Huawei, Casper, Asus, HP, Xiaomi, Monster for Laptops
-        Category samsungLaptops = new Category("Samsung");
-        Category lenovoLaptops = new Category("Lenovo");
-        Category appleLaptops = new Category("Apple");
-        Category huaweiLaptops = new Category("Huawei");
-        Category casperLaptops = new Category("Casper");
-        Category asusLaptops = new Category("Asus");
-        Category hpLaptops = new Category("HP");
-        Category xiaomiLaptops = new Category("Xiaomi");
-        Category monsterLaptops = new Category("Monster");
-
-        // Add sub-categories to phones
-        phones.addChildCategory(samsungPhones);
-        phones.addChildCategory(lenovoPhones);
-        phones.addChildCategory(applePhones);
-        phones.addChildCategory(huaweiPhones);
-        phones.addChildCategory(casperPhones);
-        phones.addChildCategory(asusPhones);
-        phones.addChildCategory(hpPhones);
-        phones.addChildCategory(xiaomiPhones);
-
-        // Add sub-categories to laptops
-        laptops.addChildCategory(samsungLaptops);
-        laptops.addChildCategory(lenovoLaptops);
-        laptops.addChildCategory(appleLaptops);
-        laptops.addChildCategory(huaweiLaptops);
-        laptops.addChildCategory(casperLaptops);
-        laptops.addChildCategory(asusLaptops);
-        laptops.addChildCategory(hpLaptops);
-        laptops.addChildCategory(xiaomiLaptops);
-        laptops.addChildCategory(monsterLaptops);
-
         // Register store with all child categories
         phones.registerStoreWithAllChildCategories(store);
         laptops.registerStoreWithAllChildCategories(store);
@@ -148,12 +106,14 @@ public class Test {
 
 
         // Register products to Categories
-        samsungPhones.registerProduct(samsungGalaxyA51);
-        applePhones.registerProduct(iPhone11);
-        xiaomiPhones.registerProduct(redmiNote10Pro8GB);
-        huaweiLaptops.registerProduct(huaweiMatebook14);
-        lenovoLaptops.registerProduct(lenovoV14Igl);
-        asusLaptops.registerProduct(asusTufGaming);
+         phones.registerProduct(samsungGalaxyA51);
+         phones.registerProduct(iPhone11);
+         phones.registerProduct(redmiNote10Pro8GB);
+         laptops.registerProduct(huaweiMatebook14);
+         laptops.registerProduct(lenovoV14Igl);
+         laptops.registerProduct(asusTufGaming);
+
+         
 
 
      }

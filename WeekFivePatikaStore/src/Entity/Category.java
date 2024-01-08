@@ -34,7 +34,9 @@ public class Category {
     }
 
 
-
+    public static Category[] getCategories() {
+        return Category.categories.values().toArray(new Category[0]);
+    }
 
     public String getName() {
         return this.name;
@@ -212,6 +214,44 @@ public class Category {
             System.out.println("Product: " + product.getName());
         }
 
+    }
+
+    public HashMap<Integer, Product> getAllProducts() {
+        HashMap<Integer, Product> products = new HashMap<Integer, Product>();
+        products.putAll(this.products);
+
+        for (Category category : this.childCategories.values()) {
+            products.putAll(category.getAllProducts());
+        }
+
+        return products;
+    }
+
+    public HashMap<Integer, Spec> getAllSpecs() {
+        HashMap<Integer, Spec> specs = new HashMap<Integer, Spec>();
+        specs.putAll(this.specs);
+
+        if (this.parentCategory != null) {
+            specs.putAll(this.parentCategory.getAllSpecs());
+        }
+
+        return specs;
+    }
+
+    public void addProduct(Product product) {
+        // check if the product has all the required specs
+        for (Spec spec : this.getAllSpecs().values()) {
+            if (!product.hasSpec(spec)) {
+                System.out.println("Product does not have the required spec: " + spec.getName());
+                return;
+            }
+        }
+
+        // add the product to the products
+        this.products.put(product.getId(), product);
+
+        // Set the category of the product
+        product.setCategory(this);
     }
 
 }

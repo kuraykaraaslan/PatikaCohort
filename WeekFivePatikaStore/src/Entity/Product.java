@@ -89,9 +89,38 @@ public class Product {
     {
         this.category = null;
     }
+    
+    public boolean hasSpec(Spec spec)
+    {
+        return this.specValues.containsKey(spec);
+    }
 
+    public Object getSpecValue(Spec spec)
+    {
+        return this.specValues.get(spec);
+    }
+
+    public HashMap<Integer, Spec> getAllSpecs()
+    {
+        HashMap<Integer, Spec> specs = new HashMap<Integer, Spec>();
+
+        for (Spec spec : this.specValues.keySet()) {
+            specs.put(spec.getId(), spec);
+        }
+
+        return specs;
+    }
+
+    public String getBrand()
+    {
+        return this.brand;
+    }
+
+    public void removeSpecValue(Spec spec)
+    {
+        this.specValues.remove(spec);
+    }
 }
-        
 
 
 
