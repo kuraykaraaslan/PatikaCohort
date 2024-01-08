@@ -254,6 +254,16 @@ public class Category {
         product.setCategory(this);
     }
 
+    public void removeSpec(Spec spec) {
+        // remove the spec from the specs
+        this.specs.remove(spec.getId());
+
+        // Remove the spec from all products
+        for (Product product : this.products.values()) {
+            product.removeSpecValue(spec);
+        }
+    }
+
 }
 
 

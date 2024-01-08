@@ -640,6 +640,30 @@ public class Screen {
 
     }
 
+    // renderDeleteSpec
+    public void renderDeleteSpec(Spec spec) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("--------------------");
+        System.out.println("Delete Spec");
+        System.out.println("--------------------");
+
+        System.out.println("Are you sure you want to delete this spec? (y/n)");
+
+        String selection = scanner.nextLine();
+
+        if (selection.equals("y")) {
+            spec.cleanFromAllProducts();
+            spec.getCategory().removeSpec(spec);
+            System.out.println("Spec deleted successfully");
+        } else {
+            System.out.println("Spec not deleted");
+        }
+
+    }
+    
+
 }
 
 

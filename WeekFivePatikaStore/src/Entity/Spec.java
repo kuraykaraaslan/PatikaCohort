@@ -73,5 +73,10 @@ public class Spec {
         this.type = type;
     }
 
+    
+    public Category getCategory() {
+        return this.category;
+    }
+
 }
 
