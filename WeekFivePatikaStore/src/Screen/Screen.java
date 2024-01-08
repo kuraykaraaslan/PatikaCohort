@@ -204,17 +204,57 @@ public class Screen {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("--------------------");
-            System.out.println(category.getName());
-            System.out.println("--------------------");
 
+            // get all products
             HashMap<Integer, Product> products = category.getAllProducts();
 
-            for (Product product : products.values()) {
-                System.out.println(product.getId() + ") " + product.getName());
+            // get all specs
+            HashMap<Integer, Spec> specs = category.getAllSpecs();
+
+            // clear screen
+            clrscr();
+
+            String line = "";
+
+            for (Spec spec : specs.values()) {
+                // add - 20 chars
+                line += "--------------------";
             }
 
-            System.out.println("--------------------");
+            System.out.println(line);
+            System.out.println(category.getName());
+            System.out.println(line);
+
+            String titleBar = "";
+
+            for (Spec spec : specs.values()) {
+                // add |
+                titleBar += "|";
+                // wideness of the column is 20
+                titleBar += String.format("%-20s", spec.getName());
+            }
+            titleBar += "|";
+
+            System.out.println(titleBar);
+
+            for (Product product : products.values()) {
+
+                System.out.println(line);
+
+                String singleProduct = "";
+
+                for (Spec spec : specs.values()) {
+                    // add |
+                    singleProduct += "|";
+                    // wideness of the column is 20
+                    singleProduct += String.format("%-20s", product.getSpecValue(spec));
+                }
+                singleProduct += "|";
+
+                System.out.println(singleProduct);
+            }
+
+            System.out.println(line);
 
             System.out.println("Select Product: (0 to go back)");
 
