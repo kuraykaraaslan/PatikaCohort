@@ -25,7 +25,7 @@ public class Main {
         Screen screen = new Screen(store);
 
         // Show main menu
-        screen.mainMenu();
+        screen.render();
 
 
     }
