@@ -1,6 +1,8 @@
 package Entity;
 import java.util.HashMap;
 
+import Entity.Spec;
+
 public class Category {
 
     // This is a static variable that will be used to generate unique IDs for each
@@ -27,7 +29,12 @@ public class Category {
         this.name = name;
         this.id = Category.categories.size() + 1;
         Category.categories.put(this.id, this);
+
+        // create default specs from the name, description, brand, price, quantity, discount
     }
+
+
+
 
     public String getName() {
         return this.name;

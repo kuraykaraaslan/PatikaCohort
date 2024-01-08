@@ -5,7 +5,7 @@ public class Product {
     private static int nextId = 1;
     private int id;
 
-    /* private String name;
+    private String name;
     private String description;
 
     private String brand;
@@ -13,7 +13,7 @@ public class Product {
     private double price;
     private int quantity;
 
-    private double discount; */
+    private double discount;
 
     private Category category;
 
