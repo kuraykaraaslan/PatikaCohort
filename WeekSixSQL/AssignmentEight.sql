@@ -69,7 +69,7 @@ UPDATE employee SET birthday = '1988-05-01' WHERE id = 5;
 
 -- Example Delete
 DELETE FROM employee WHERE id = 1;
-DELETE FROM employee WHERE id = 2;
-DELETE FROM employee WHERE id = 3;
+DELETE FROM employee WHERE birthday = '1990-05-16';
+DELETE FROM employee WHERE email = 'mwanklin1b@state.gov';
 DELETE FROM employee WHERE id = 4;
-DELETE FROM employee WHERE id = 5;
+DELETE FROM employee WHERE birthday = '1988-05-01';
