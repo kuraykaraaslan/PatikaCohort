@@ -1,10 +1,9 @@
-package org.example;
+package org.jdbc;
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.PreparedStatement;
 import java.lang.String;
 
 public class Main {
