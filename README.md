@@ -6,9 +6,7 @@ Welcome to my bootcamp repository! This repository is a comprehensive collection
 
 The primary goal of this repository is to showcase my learning journey, track progress, and serve as a reference for both personal review and potential collaboration. By maintaining a centralized repository, I aim to create a streamlined and easily navigable archive of my coding endeavors.
 
-## Folder Structure
-
-### Practice Exercises
+## Practice Exercises
 
 Weekly practice exercises are organized chronologically:
 
@@ -68,7 +66,7 @@ Weekly practice exercises are organized chronologically:
 - [Sort Numbers](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekTwoSortNumbers/src/Main.java)
 
 ## Week Three
-- [WeekThreeMineSweeper](https://github.com/kuraykaraaslan/MineSweeper)
+- [WeekThreeMineSweeper](https://github.com/kuraykaraaslan/MineSweeper) **`External`**
 
 ## Week Four
 - [WeekFourAdventureGame](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourAdventureGame/src/Main.java)
