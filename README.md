@@ -67,6 +67,27 @@ Weekly practice exercises are organized chronologically:
 - [Round Max Min](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekTwoRoundMaxMin/src/Main.java)
 - [Sort Numbers](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekTwoSortNumbers/src/Main.java)
 
+## Week Three
+- [WeekThreeMineSweeper](https://github.com/kuraykaraaslan/MineSweeper)
+
+## Week Four
+- [WeekFourAdventureGame](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourAdventureGame/src/Main.java)
+- [WeekFourList](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourList/src/Main.java)
+
+## Week Five
+- [WeekFiveBookSorter](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveBookSorter/src/Main.java)
+- [WeekFivePatikaStore](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFivePatikaStore/src/Main.java)
+- [WeekFiveSQL](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveSQL/)
+- [WeekFiveTryCacth](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveTryCacth/src/Main.java)
+- [WeekFiveWordFrequency](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveWordFrequency/src/Main.java)
+
+## Week Six
+- [WeekSixFileSum](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixFileSum/src/Main.java)
+- [WeekSixJDBC](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixJDBC/src/Main.java)
+- [WeekSixNotepad](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixNotepad/src/Main.java)
+- [WeekSixSQL](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixSQL)
+
+
 
 ### Getting Started
 
