@@ -21,6 +21,8 @@ public class Main {
         // Check if a session file exists
         if (Files.exists(Paths.get("session.txt"))) {
             readFromSession(); // If the session file exists, read data from it
+            scanner.close(); // Close the scanner
+            return; // Exit the program
         } else {
             System.out.println("Session file does not exist. Input File Name:"); // Prompt the user to input a file name
             String fileName = scanner.nextLine(); // Read the file name from the user
