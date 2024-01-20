@@ -12,8 +12,6 @@ public class Book {
 
     private int citizenship_id;
 
-    private String mp_number;
-
     private Date start_date;
     private Date end_date;
 
@@ -30,7 +28,6 @@ public class Book {
         this.email = email;
         this.phone = phone;
         this.citizenship_id = citizenship_id;
-        this.mp_number = mp_number;
         this.start_date = start_date;
         this.end_date = end_date;
         this.book_case = book_case;
@@ -65,9 +62,6 @@ public class Book {
         return citizenship_id;
     }
 
-    public String getMpNumber() {
-        return mp_number;
-    }
 
     public Date getStartDate() {
         return start_date;
@@ -112,10 +106,6 @@ public class Book {
 
     public void setCitizenshipId(int citizenship_id) {
         this.citizenship_id = citizenship_id;
-    }
-
-    public void setMpNumber(String mp_number) {
-        this.mp_number = mp_number;
     }
 
     public void setStartDate(Date start_date) {
@@ -170,13 +160,15 @@ public class Book {
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", citizenship_id=" + citizenship_id +
-                ", mp_number='" + mp_number + '\'' +
                 ", start_date=" + start_date +
                 ", end_date=" + end_date +
                 ", book_case='" + book_case + '\'' +
                 ", note='" + note + '\'' +
                 ", price=" + price +
                 '}';
+    }
+
+    public void setBookID(String text) {
     }
 
 }

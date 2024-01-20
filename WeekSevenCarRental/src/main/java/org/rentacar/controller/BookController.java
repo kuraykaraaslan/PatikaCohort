@@ -41,4 +41,19 @@ public class BookController {
         }
     }
 
-    p
+    public ArrayList<Object[]> getForTable(int size, ArrayList<Book> books) {
+        ArrayList<Object[]> data = new ArrayList<>();
+        for (Book book : books) {
+            Object[] row = new Object[size];
+            row[0] = book.getId();
+            row[1] = book.getCar().getBrand().getName();
+            row[2] = book.getCar().getModel().getName();
+            row[3] = book.getCar().getPlate();
+            row[4] = book.getCar().getColor();
+            row[5] = book.getCar().getKilometers();
+            row[6] = book.getCar().getModel().getYear();
+            row[7] = book.getCar().getModel().getType();
+            row[8] = book.getCar().getModel().getFuel();
+            row[9] = book.getCar().getModel().getGear();
+        }
+    }

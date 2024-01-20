@@ -1,20 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.rentacar.views.BookingView">
-  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="container" layout-manager="GridLayoutManager" row-count="11" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="798"/>
+      <xy x="20" y="20" width="500" height="500"/>
     </constraints>
-    <properties>
-      <font size="20"/>
-    </properties>
-    <border type="none" title="REZARVASYON OLUŞTUR"/>
+    <border type="none" title="Booking Form" show-title="false" disposable="true" enabled="true"/>
     <children>
-      <vspacer id="8a446">
+      <label text="Car Info:" for-component="lbl_car_info">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
-      </vspacer>
+      </label>
+      <textfield id="fld_book_name" type="javax.swing.JTextField" text="">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </textfield>
+      <textfield id="fld_book_idno" type="javax.swing.JTextField" text="">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </textfield>
+      <textfield id="fld_book_mpno" type="javax.swing.JTextField" text="">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </textfield>
+      <textfield id="fld_book_mail" type="javax.swing.JTextField" text="">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </textfield>
+      <textfield id="fld_book_strt_date" type="javax.swing.JTextField" text="">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </textfield>
+      <textfield id="fld_book_fnsh_date" type="javax.swing.JTextField" text="">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </textfield>
+      <textfield id="fld_book_prc" type="javax.swing.JTextField" text="">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </textfield>
+      <textarea id="txta_book_note" type="javax.swing.JTextArea" text="">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </textarea>
+      <button text="Save" id="btn_book_save" enabled="true"/>
     </children>
   </grid>
 </form>
