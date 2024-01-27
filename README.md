@@ -1,6 +1,8 @@
+![patika.dev](/static/logo.png)
+
 # Bootcamp Repository
 
-Welcome to my bootcamp repository! This repository is a comprehensive collection of all the projects and practice exercises undertaken during my bootcamp journey. As I progress through the program, each project and practice session is meticulously organized into dedicated folders within this repository.
+Welcome to my bootcamp repository! This repository is a comprehensive collection of all the projects and practice exercises undertaken during my patika+ journey. As I progress through the program, each project and practice session is meticulously organized into dedicated folders within this repository.
 
 ## Purpose
 

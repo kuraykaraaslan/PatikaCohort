@@ -40,7 +40,7 @@ public class BookData {
         return book;
     }
 
-    public ArrayList<Book> getAll() {
+    public VZ<Book> getAll() {
         ArrayList<Book> books = new ArrayList<>();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM books");
@@ -150,22 +150,6 @@ public class BookData {
             preparedStatement.setString(4, "%" + keyword + "%");
             preparedStatement.setString(5, "%" + keyword + "%");
             preparedStatement.setString(6, "%" + keyword + "%");
-            ResultSet rs = preparedStatement.executeQuery();
-            while (rs.next()) {
-                books.add(match(rs));
-            }
-        } catch (SQLException e) {
-            Helpers.showErrorMessage(e.getMessage());
-            return null;
-        }
-        return books;
-    }
-
-    public ArrayList<Book> search(int id) {
-        ArrayList<Book> books = new ArrayList<>();
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM books WHERE car_id = ?");
-            preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 books.add(match(rs));
