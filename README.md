@@ -1,8 +1,8 @@
 ![patika.dev](/static/logo.png)
 
-# Bootcamp Repository
+# Patika Plus Repository
 
-Welcome to my bootcamp repository! This repository is a comprehensive collection of all the projects and practice exercises undertaken during my patika+ journey. As I progress through the program, each project and practice session is meticulously organized into dedicated folders within this repository.
+Welcome to my patika+ repository! This repository is a comprehensive collection of all the projects and practice exercises undertaken during my patika+ journey. As I progress through the program, each project and practice session is meticulously organized into dedicated folders within this repository.
 
 ## Purpose
 
@@ -68,7 +68,7 @@ Weekly practice exercises are organized chronologically:
 - [Sort Numbers](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekTwoSortNumbers/src/Main.java)
 
 ## Week Three
-- [WeekThreeMineSweeper](https://github.com/kuraykaraaslan/MineSweeper) **`External`**
+- [MineSweeper](https://github.com/kuraykaraaslan/MineSweeper) **`External`**
 
 ## Week Four
 - [WeekFourAdventureGame](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourAdventureGame/src/Main.java)
@@ -87,14 +87,16 @@ Weekly practice exercises are organized chronologically:
 - [WeekSixNotepad](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixNotepad/src/Main.java)
 - [WeekSixSQL](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixSQL)
 
+## Week Seven
+- [TravelAgency](https://github.com/kuraykaraaslan/TravelAgency) **`External`**
+
+## Week Eight
 
 
 ### Getting Started
 
 Detailed instructions on how to explore each project or practice exercise are provided within the corresponding folders. This includes setup guidelines, dependencies, and any additional information necessary for a smooth experience.
 
-### Contributions
+### Free of Use
 
-Feedback, suggestions, and contributions are highly valued! Whether you notice room for improvement, discover an issue, or have ideas to share, please feel free to open an issue or submit a pull request. Your input is instrumental in enhancing the quality of this repository.
-
-Happy coding, and thank you for joining me on this learning adventure!
+All projects and practice exercises are free of use. Feel free to explore, modify, and share as you please. If you have any questions, please feel free to reach out to me.
