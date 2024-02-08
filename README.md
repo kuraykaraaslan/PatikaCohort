@@ -71,27 +71,27 @@ Weekly practice exercises are organized chronologically:
 - [MineSweeper](https://github.com/kuraykaraaslan/MineSweeper) **`External`**
 
 ## Week Four
-- [WeekFourAdventureGame](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourAdventureGame/src/Main.java)
-- [WeekFourList](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourList/src/Main.java)
+- [Adventure Game](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourAdventureGame/src/Main.java)
+- [List](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourList/src/Main.java)
 
 ## Week Five
-- [WeekFiveBookSorter](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveBookSorter/src/Main.java)
-- [WeekFivePatikaStore](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFivePatikaStore/src/Main.java)
-- [WeekFiveSQL](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveSQL/)
-- [WeekFiveTryCacth](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveTryCacth/src/Main.java)
-- [WeekFiveWordFrequency](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveWordFrequency/src/Main.java)
+- [Book Sorter](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveBookSorter/src/Main.java)
+- [Patika Store](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFivePatikaStore/src/Main.java)
+- [SQL](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveSQL/)
+- [Try Cacth](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveTryCacth/src/Main.java)
+- [Word Frequency](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFiveWordFrequency/src/Main.java)
 
 ## Week Six
-- [WeekSixFileSum](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixFileSum/src/Main.java)
-- [WeekSixJDBC](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixJDBC/src/Main.java)
-- [WeekSixNotepad](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixNotepad/src/Main.java)
-- [WeekSixSQL](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixSQL)
+- [File Sum](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixFileSum/src/Main.java)
+- [JDBC](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixJDBC/src/Main.java)
+- [Notepad](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixNotepad/src/Main.java)
+- [SQL](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixSQL)
 
 ## Week Seven
-- [TravelAgency](https://github.com/kuraykaraaslan/TravelAgency) **`External`**
+- [Travel Agency](https://github.com/kuraykaraaslan/TravelAgency) **`External`**
 
 ## Week Ten
-- [WeekTenLibraryManagement](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekTenLibraryManagement)
+- [Library Management](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekTenLibraryManagement)
 
 
 ### Getting Started
