@@ -90,7 +90,8 @@ Weekly practice exercises are organized chronologically:
 ## Week Seven
 - [TravelAgency](https://github.com/kuraykaraaslan/TravelAgency) **`External`**
 
-## Week Eight
+## Week Ten
+- [WeekTenLibraryManagement](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekTenLibraryManagement)
 
 
 ### Getting Started
