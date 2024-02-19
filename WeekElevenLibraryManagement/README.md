@@ -27,12 +27,11 @@ This is a library management system built using Spring Boot. It provides a set o
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/yourusername/library-management.git`
-2. Navigate to the project directory: `cd library-management`
+1. Clone the repository: 
+2. Navigate to the project directory: `cd WeekElevenLibraryManagement`
 3. Build the project: `mvn clean install`
-4. Run the application: `java -jar target/library-management.jar`
+4. Run the application: `java -jar target/WeekElevenLibraryManagement.jar`
 
 ## Configuration
 
 - Database configuration: Update `application.properties` file with your database credentials.
-- Security configuration: Customize security settings in `SecurityConfig.java`.
