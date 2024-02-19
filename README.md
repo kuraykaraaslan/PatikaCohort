@@ -96,6 +96,9 @@ Weekly practice exercises are organized chronologically:
 ## Week Eleven
 - [Library Management](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekElevenLibraryManagement) **`Spring Boot`**
 
+## Week Twelve
+- [Veterinary Management](https://github.com/kuraykaraaslan/Veterinary) **`External`** **`Spring Boot`**
+
 ### Getting Started
 
 Detailed instructions on how to explore each project or practice exercise are provided within the corresponding folders. This includes setup guidelines, dependencies, and any additional information necessary for a smooth experience.
