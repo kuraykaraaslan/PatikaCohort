@@ -93,6 +93,8 @@ Weekly practice exercises are organized chronologically:
 ## Week Ten
 - [Library Management](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekTenLibraryManagement)
 
+## Week Eleven
+- [Library Management](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekElevenLibraryManagement) **`Spring Boot`**
 
 ### Getting Started
 
