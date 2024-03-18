@@ -102,6 +102,14 @@ Weekly practice exercises are organized chronologically:
 ## Week Thirteen
 - [Hello React](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekThirteenHelloReact) **`React`**
 
+## Week Fourteen
+- [About Me](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourteenAboutMe) **`HTML`**
+- [Animal Kingdom](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourteenAnimalKingdom) **`HTML`**
+- [Another Page](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourteenAnotherPage) **`HTML`**
+- [Chocolate Cube](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourteenChocolateCube) **`HTML`**
+- [Form](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourteenForm) **`HTML`**
+- [Google](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFourteenGoogle) **`HTML` & `CSS` & `JS`**
+
 ### Getting Started
 
 Detailed instructions on how to explore each project or practice exercise are provided within the corresponding folders. This includes setup guidelines, dependencies, and any additional information necessary for a smooth experience.
