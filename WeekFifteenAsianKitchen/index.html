@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asian Kitchen</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap" rel="stylesheet" />
+  <!-- Boostrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="menu">
+      <!-- title -->
+      <div class="title">
+        <h2>Asian Kitchen's Menu</h2>
+      </div>
+      <!-- category menu -->
+      <div class="category-menu mb-4">
+        <button class="btn btn-outline-primary" onclick="filterMenu('all')">All</button>
+        <button class="btn btn-outline-primary" onclick="filterMenu('Korea')">Korea</button>
+        <button class="btn btn-outline-primary" onclick="filterMenu('Japan')">Japan</button>
+        <button class="btn btn-outline-primary" onclick="filterMenu('China')">China</button>
+      </div>
+      <!-- menu items -->
+      <div class="section-center row" id="menu-items">
+        <!-- menu items will be dynamically added here -->
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    // Function to dynamically generate menu items based on category
+    function populateMenu(category) {
+      const menuItemsContainer = document.getElementById('menu-items');
+      menuItemsContainer.innerHTML = '';
+
+      let filteredMenu;
+      if (category === 'all') {
+        filteredMenu = menu;
+      } else {
+        filteredMenu = menu.filter(item => item.category === category);
+      }
+
+      filteredMenu.forEach(item => {
+        const menuItem = `
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item">
+              <img src="${item.img}" alt="${item.title}" class="photo" />
+              <div class="item-info">
+                <header>
+                  <h4>${item.title}</h4>
+                  <h4 class="price">$${item.price}</h4>
+                </header>
+                <p class="item-text">${item.desc}</p>
+              </div>
+            </div>
+          </div>
+        `;
+        menuItemsContainer.innerHTML += menuItem;
+      });
+    }
+
+    // Function to filter menu based on category
+    function filterMenu(category) {
+      populateMenu(category);
+    }
+
+    // Initial population of menu
+    populateMenu('all');
+  </script>
+</body>
+</html>

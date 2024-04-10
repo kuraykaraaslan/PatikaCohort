@@ -112,8 +112,9 @@ Weekly practice exercises are organized chronologically:
 
 ## Week Fifteen
 
-- [Instagram Clone](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFifteenInstagram) **`Bootstrap` **
-
+- [Music Store](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFifteenMusicStore) **`Bootstrap`**
+- [Instagram Clone](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFifteenInstagram) **`Bootstrap`**
+- [To Do List](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekFifteenToDoList) **`JS`**
 ### Getting Started
 
 Detailed instructions on how to explore each project or practice exercise are provided within the corresponding folders. This includes setup guidelines, dependencies, and any additional information necessary for a smooth experience.
