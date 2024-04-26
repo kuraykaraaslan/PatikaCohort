@@ -120,6 +120,11 @@ Weekly practice exercises are organized chronologically:
 ## Week Sixteen
 - [Clock](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixteenClock) **`JS`**
 
+## Week Seventeen
+- [Spend Bill Gates Money]((https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSeventeenSpendBillGatesMoney) **`React`**
+
+
+
 
 ### Getting Started
 
