@@ -1,4 +1,4 @@
-![homepage](/static/sports.gif)
+![homepage](./static/sports.gif)
 
 # Sports Center
 
