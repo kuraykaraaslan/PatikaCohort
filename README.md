@@ -99,6 +99,8 @@ Weekly practice exercises are organized chronologically:
 ## Week Twelve
 - [Veterinary Management](https://github.com/kuraykaraaslan/Veterinary) **`External`** **`Spring Boot`** 
 
+*After the week twelve, I got my first job and I had to slow down my progress. at this point, rest of the projects won't be as detailed as the previous ones.*
+
 ## Week Thirteen
 - [Hello React](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekThirteenHelloReact) **`React`**
 
@@ -119,11 +121,13 @@ Weekly practice exercises are organized chronologically:
 
 ## Week Sixteen
 - [Clock](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixteenClock) **`JS`**
+- [Sport Center](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixteenSportCenter) **`JS`**  
 
 ## Week Seventeen
-- [Spend Bill Gates Money]((https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSeventeenSpendBillGatesMoney) **`React`**
+- [Spend Bill Gates Money](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSeventeenSpendBillGatesMoney) **`React`**
 
-
+## Week Eighteen
+- [Sport Center React](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekEighteenSportCenter) **`React`**
 
 
 ### Getting Started
