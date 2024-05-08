@@ -127,6 +127,9 @@ Weekly practice exercises are organized chronologically:
 ## Week Eighteen
 - [Sport Center React](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekEighteenSportCenter) **`React`**
 
+## Week Nineteen
+- [QuizApp](https://github.com/kuraykaraaslan/QuizApp) **`External`**
+
 
 ### Getting Started
 
