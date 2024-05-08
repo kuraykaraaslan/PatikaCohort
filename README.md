@@ -122,7 +122,7 @@ Weekly practice exercises are organized chronologically:
 - [Sport Center](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSixteenSportCenter) **`JS`**  
 
 ## Week Seventeen
-- [Spend Bill Gates Money](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSeventeenSpendBillGatesMoney) **`React`**
+- [Spend Bill Gates Money](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekSeventeenSpendBillGatesMoney) **`React`** **`Removed`**
 
 ## Week Eighteen
 - [Sport Center React](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekEighteenSportCenter) **`React`**
