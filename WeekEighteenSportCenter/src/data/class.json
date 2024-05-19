@@ -1,0 +1,43 @@
+{
+    "yoga": {
+      "id": "yoga",
+      "firstQuestion": "Why are your Yoga?",
+      "information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur incidunt eaque velit, adipisci corrupti nostrum deleniti quo veritatis ducimus doloribus, amet sit quos molestiae dolores corporis ad aut labore quae quaerat! Maiores atque totam modi ea repellat alias nemo vel",
+      "secondQuestion": "When comes Yoga Your Time?",
+      "firstProgram": "Saturday - Sunday: 8:00am - 10:00am",
+      "secondProgram": "Monday - Tuesday: 10:00am - 12:00am",
+      "thirdrogram": "Wednesday - Friday: 3:00am - 6:00am",
+      "image": "./images/yoga.jpg"
+    },
+    "group": {
+      "id": "group",
+      "firstQuestion": "Why are your Group?",
+      "information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur incidunt eaque velit, adipisci corrupti nostrum deleniti quo veritatis ducimus doloribus, amet sit quos molestiae dolores corporis ad aut labore quae quaerat! Maiores atque totam modi ea repellat alias nemo vel",
+      "secondQuestion": "When comes Group Your Time?",
+      "firstProgram": "Saturday - Sunday: 10:00am - 12:00am",
+      "secondProgram": "Monday - Tuesday: 12:00am - 14:00am",
+      "thirdrogram": "Wednesday - Friday: 6:00am - 9:00am",
+      "image": "./images/group.webp"
+    },
+    "solo": {
+      "id": "solo",
+      "firstQuestion": "Why are your Solo?",
+      "information": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nihil velit rerum dolores nem quisquam architecto minus, veritatis quo nisi reiciendis sed dignissimos facilis ad.",
+      "secondQuestion": "When comes Solo Your Time?",
+      "firstProgram": "7/24",
+      "secondProgram": "",
+      "thirdrogram": "",
+      "image": "./images/solo.jpg"
+    },
+    "stretching": {
+      "id": "stretching",
+      "firstQuestion": "Why are your Stretching?",
+      "information": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, quas!",
+      "secondQuestion": "When comes Stretching Your Time?",
+      "firstProgram": "Saturday - Sunday: 8:00am - 10:00am",
+      "secondProgram": "Monday - Tuesday: 10:00am - 12:00am",
+      "thirdrogram": "Wednesday - Friday: 3:00am - 6:00am",
+      "image": "./images/stret.webp"
+    }
+  }
+  

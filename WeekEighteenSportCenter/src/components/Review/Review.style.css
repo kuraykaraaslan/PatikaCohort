@@ -1,0 +1,103 @@
+#review {
+  background-color: var(--color-lb);
+  padding-bottom: 80px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review {
+  width: 45%;
+}
+
+.userProfile {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.userProfile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.userInfo {
+  margin-left: 10px;
+}
+
+.userJob {
+  color: black;
+  font-size: var(--fs-1-1);
+  font-weight: var(--fw-600);
+  padding: 0;
+}
+
+.userPosition {
+  color: black;
+  font-size: var(--fs-0-9);
+  font-weight: var(--fw-600);
+  padding: 0;
+}
+
+.userComment {
+  background-color: var(--color-b);
+  padding: 5px 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.userComment p {
+  color: var(--color-w);
+}
+
+.commentBackground {
+  background-color: var(--color-b);
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 118%;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 85%,
+    85% 100%,
+    85% 60%,
+    15% 60%,
+    15% 100%,
+    0 85%
+  );
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    flex-direction: column;
+  }
+
+  .review {
+    width: 80%;
+  }
+
+  .review:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .reviews {
+    flex-direction: column;
+  }
+
+  .review {
+    width: 80%;
+  }
+
+  .review:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}

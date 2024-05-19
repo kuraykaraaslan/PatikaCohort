@@ -1,0 +1,149 @@
+#trainers {
+  background-color: var(--color-lb);
+  padding-bottom: 20px;
+}
+
+.trainerCards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainerCard {
+  width: 25%;
+  position: relative;
+  z-index: 1;
+}
+
+.trainerCard img {
+  width: 100%;
+  border: 2px solid var(--color-y);
+  border-radius: 5px;
+}
+
+.cardClip {
+  position: absolute;
+  top: -2%;
+  left: -3%;
+  width: 106%;
+  height: 102%;
+  background-color: var(--color-b);
+  z-index: -1;
+  clip-path: polygon(
+    0 35%,
+    35% 35%,
+    35% 0,
+    65% 0,
+    65% 35%,
+    100% 35%,
+    100% 65%,
+    65% 65%,
+    65% 100%,
+    35% 100%,
+    35% 65%,
+    0 65%
+  );
+  transition: all 0.2s linear;
+}
+
+.trainerCard:hover .cardClip {
+  clip-path: polygon(
+    0 15%,
+    15% 15%,
+    15% 0,
+    85% 0,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0 85%
+  );
+}
+
+.trainerName {
+  position: absolute;
+  background-color: var(--color-b);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 85%;
+  height: 0;
+  clip-path: polygon(
+    0 30%,
+    20% 30%,
+    20% 20%,
+    80% 20%,
+    80% 30%,
+    100% 30%,
+    100% 70%,
+    80% 70%,
+    80% 80%,
+    20% 80%,
+    20% 70%,
+    0 70%
+  );
+  transition: all 0.2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-w);
+}
+
+.trainerName h2 {
+  font-size: 2dvw;
+  font-weight: var(--fw-600);
+}
+
+.trainerName p {
+  font-size: 1dvw;
+  color: var(--color-w);
+  padding: 0;
+}
+
+.trainerCard:hover .trainerName {
+  height: 50%;
+}
+
+@media (max-width: 768px) {
+  .trainerCards {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+  }
+
+  .trainerCard {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+
+  .trainerName h2 {
+    font-size: 4dvw;
+  }
+
+  .trainerName p {
+    font-size: 2dvw;
+  }
+}
+
+@media (max-width: 576px) {
+  .trainerCards {
+    flex-direction: column;
+  }
+
+  .trainerCard {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .trainerName h2 {
+    font-size: 8dvw;
+  }
+
+  .trainerName p {
+    font-size: 4dvw;
+  }
+}

@@ -1,0 +1,160 @@
+/* Hero Background Image */
+.heroBackgroundImage {
+  background-image: url("../../../images/hero-man.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 220px 0 80px 0;
+}
+
+.hero h1 {
+  background-color: var(--color-b);
+  display: inline-block;
+  padding: 5px 16px;
+  font-size: var(--fs-1-6);
+  border-radius: 5px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.hero h2 {
+  font-size: var(--fs-6);
+  line-height: 7.5rem;
+  margin: 8px 0;
+}
+
+.hero h2 span {
+  display: block;
+}
+
+.hero p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color-w);
+  font-size: 1.8rem;
+  line-height: 35px;
+  padding: 8px 18px;
+}
+
+/* Hero - Buttons */
+.heroBtns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.heroBtns a {
+  font-size: var(--fs-1-6);
+  font-weight: var(--fw-600);
+  padding: 8px 30px;
+  margin: 8px 24px;
+}
+
+.heroBtns a:first-child {
+  background-color: var(--color-b);
+  border: 2px solid var(--color-b);
+}
+
+.heroBtns a:last-child {
+  border: 2px solid var(--color-w);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.heroBtns a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  scale: 0.95;
+}
+
+/* Hero - Statictics  */
+/* Hero Statistics Background */
+.heroStatisticsBackground {
+  background-color: var(--color-lb);
+}
+
+.statisticsContainer {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.statistic {
+  background-color: var(--color-w);
+  width: 23%;
+  margin: 25px 0;
+  font-size: var(--fs-1-3);
+  font-weight: var(--fw-800);
+}
+
+.statistic .number {
+  color: var(--color-b);
+  padding-top: 20px;
+  display: inline-block;
+}
+
+.statistic p {
+  padding-bottom: 20px;
+  font-weight: var(--fw-800);
+}
+
+@media (max-width: 768px) {
+  .statisticsContainer {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+
+  .statistic {
+    width: 45%;
+    font-size: var(--fs-2);
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+
+  .hero h2 {
+    font-size: var(--fs-3);
+    line-height: 3.5rem;
+  }
+
+  .hero h2 span {
+    display: inline;
+  }
+
+  .hero p {
+    font-size: var(--fs-1-3);
+  }
+
+  /* Hero - Buttons */
+  .heroBtns {
+    flex-direction: column;
+  }
+
+  .heroBtns a {
+    width: 100%;
+    padding: 12px 30px;
+    font-size: var(--fs-1-6);
+    font-weight: var(--fw-700);
+  }
+
+  /* Hero - Statistics */
+  .statisticsContainer {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+
+  .statistic {
+    width: 100%;
+    font-size: var(--fs-2);
+  }
+}

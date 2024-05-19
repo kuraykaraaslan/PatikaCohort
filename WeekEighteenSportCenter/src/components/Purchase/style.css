@@ -1,0 +1,87 @@
+#purchase {
+  margin-bottom: 50px;
+}
+
+.purchaseContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.purchaseCard {
+  width: 23%;
+  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.purchaseCard:hover .cart {
+  background-color: var(--color-y);
+}
+
+.purchaseCard img {
+  width: 100%;
+}
+
+.purchaseItemName,
+.purchaseItemPrice {
+  color: black;
+  margin: 0;
+  font-size: var(--fs-0-9);
+  font-weight: var(--fw-700);
+}
+
+.purchaseItemPrice {
+  font-size: var(--fs-0-7);
+}
+
+.purchaseItemPrice span {
+  color: black;
+  text-decoration: line-through;
+}
+
+.cart {
+  padding-bottom: 3px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  position: relative;
+}
+
+.cart a {
+  color: black;
+  font-size: var(--fs-0-7);
+  font-weight: var(--fw-700);
+  padding: 10px;
+}
+
+.cart a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f07a";
+  position: absolute;
+  left: 14%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .purchaseContainer {
+    flex-wrap: wrap;
+  }
+
+  .purchaseCard {
+    width: 45%;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .purchaseContainer {
+    flex-direction: column;
+  }
+
+  .purchaseCard {
+    width: 80%;
+    margin: 30px 0;
+  }
+}

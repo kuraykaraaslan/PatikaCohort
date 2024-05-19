@@ -1,0 +1,86 @@
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  gap: 30px;
+}
+
+.contact p:first-child {
+  font-size: var(--fs-0-9);
+  font-weight: var(--fw-600);
+  padding: 0;
+}
+
+.contact p:last-child {
+  font-size: var(--fs-0-7);
+  font-weight: var(--fw-700);
+  padding: 0;
+}
+
+.appoinment {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: left;
+}
+
+.appoinment h4 {
+  font-size: var(--fs-1-1);
+  font-weight: var(--fw-600);
+  margin-bottom: 15px;
+}
+
+.appoinment input {
+  margin-bottom: 30px;
+  background-color: var(--color-lb);
+  border: none;
+  padding: 7px 12px;
+  color: var(--color-g);
+}
+
+.appoinment textarea {
+  background-color: var(--color-lb);
+  padding: 7px 12px;
+  border: none;
+  color: var(--color-g);
+}
+
+.googleMap {
+  width: 50%;
+  height: 350px;
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .appoinment {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .googleMap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .appoinment {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .googleMap {
+    width: 100%;
+  }
+}

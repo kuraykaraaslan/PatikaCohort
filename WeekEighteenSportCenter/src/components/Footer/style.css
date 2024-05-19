@@ -1,0 +1,29 @@
+#footer {
+  background-color: var(--color-b);
+}
+
+#footer p {
+  color: var(--color-w);
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerLinks h4 {
+  color: var(--color-w);
+  font-size: var(--fs-1-3);
+  font-weight: var(--fw-600);
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  margin-bottom: 18px;
+  font-size: var(--fs-0-9);
+}
