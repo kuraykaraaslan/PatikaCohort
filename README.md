@@ -129,7 +129,7 @@ Weekly practice exercises are organized chronologically:
 
 ## Week Nineteen
 - [QuizApp](https://github.com/kuraykaraaslan/QuizApp) **`External`**
-
+- [To Do List React](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekNineteenToDo) **`React`**
 
 ### Getting Started
 
