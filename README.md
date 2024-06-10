@@ -97,7 +97,7 @@ Weekly practice exercises are organized chronologically:
 - [Library Management](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekElevenLibraryManagement) **`Spring Boot`**
 
 ## Week Twelve
-- [Veterinary Management](https://github.com/kuraykaraaslan/Veterinary) **`External`** **`Spring Boot`** 
+- [Veterinary Management Backend](https://github.com/kuraykaraaslan/VeterinaryBE) **`External`** **`Spring Boot`** 
 
 ## Week Thirteen
 - [Hello React](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekThirteenHelloReact) **`React`**
@@ -131,6 +131,20 @@ Weekly practice exercises are organized chronologically:
 - [QuizApp](https://github.com/kuraykaraaslan/QuizApp) **`External`**
 - [To Do List React](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekNineteenToDo) **`React`**
 - [Star Wars](https://github.com/kuraykaraaslan/PatikaCohort/blob/main/WeekNineteenStarWars) **`React`**
+
+## Week Twenty Six
+- [Veterinary Management Frontend](http://github.com/kuraykaraaslan/VeterinaryFE) **`External`** **`React`**
+
+
+## End of Patika+
+
+It has been an incredible journey, and I am grateful for the opportunity to learn and grow. I look forward to continuing my coding journey and exploring new projects and technologies. Thank you for following along! 🚀
+
+## Credits
+
+- [Patika.dev](https://www.patika.dev/)
+- [Kodluyoruz](https://www.kodluyoruz.org/)
+
 
 ### Getting Started
 
